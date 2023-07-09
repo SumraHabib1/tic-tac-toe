@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+background-color: darkblue;
+color: aliceblue;
+display: flex;
+position: sticky;
+top: 0;
+z-index: 1;
+padding: 10px;
+align-items: center;
+justify-content: center;
+}
+.game{
+    display: flex;
+    margin: 4px;
+    padding: 6px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+justify-content: center;
+position: relative;
+
+}
+.container1{
+    display: grid;
+    padding: 3%;
+    grid-template-columns: repeat(3,5vw);
+    grid-template-rows: repeat(3,5vw);
+}
+.container2{
+    align-items: center;
+    justify-content: center;
+}
+/* line after winning  */
+.line{
+    position: absolute;
+    height: 3px;
+    width: 15vw;
+    background-color: blue;
+    transform: translate(-112px, -35px) rotate(0deg);
+}
+.box{
+
+    border: 2px solid black;
+    font-size: 4vw;
+    text-align: center;
+}
+.box:hover{
+    background-color: blanchedalmond;
+}
+.info
+{
+    font-size: 20px;
+}
+.msg h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    animation-name: won ;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding: 20px;
+    margin: 5px;
+  }
+  @keyframes won{
+    from{
+
+font-size: larger;
+    }
+    to{
+        text-shadow: 3px 3px 5px rgb(17, 134, 42), 0 0 35px rgb(15, 155, 31), 0 0 8px rgba(1, 20, 2, 0.948);
+        font-size:xx-large;
+    }
+  }
+  button
+  {
+padding: 9px;
+margin: 23px;
+background-color:rgb(14, 19, 77);
+color: aliceblue;
+border: 4px solid whitesmoke;
+border-radius: 7px;
+  }
+  button:hover
+  {
+    background-color:rgb(184, 223, 242);
+    color: black;
+  }
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
